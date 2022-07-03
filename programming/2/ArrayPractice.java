@@ -1,4 +1,4 @@
-/**
+/
  * ArrayPractice by Team BossCoders
  * Joel Bianchi
  * collaborators: (9)jingxue8303, michaelpark677, ehawkins18
@@ -299,6 +299,24 @@ public class ArrayPractice
       int temp = data[i];
       data[i] = data[data.length -1 -i];
       data [data.length -1 -i] = temp;
+    }
+
+  
+     public static void flip( int[] data )
+  {
+    //loop through half of the array
+    for(int i=0; i<data.length/2; i++){
+
+      //store the first element
+      int temp = data[i];
+
+      //move the last element to the first spot
+      data[i] = data[data.length -1 -i];
+
+      //move the first element to the last spot
+      data [data.length -1 -i] = tem
+
+      
     }
   }
 
