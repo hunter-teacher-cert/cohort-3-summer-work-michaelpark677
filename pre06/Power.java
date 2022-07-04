@@ -7,8 +7,6 @@ public class Power {
     for(int i = 0; i < n; i++) {
 
       ans = ans * x;
-
-    
     }
 
     return ans;
@@ -19,8 +17,8 @@ public class Power {
     double x = 4;
     int n = 5;
     
-
-    System.out.println(x + " to the power of " + n + " is "+ power (x, n));
+    System.out.print(x + " to the power of ");
+    System.out.println(n + " is "+ power (x, n));
 
   }
 }
