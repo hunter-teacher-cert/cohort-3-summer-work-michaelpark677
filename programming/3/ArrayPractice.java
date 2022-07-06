@@ -168,6 +168,32 @@ public class Array2DPractice
      qqqXz
      explodeAllchar(board,'z') will change board to:
   */
+
+
+
+     public static void explodeSquare( char[][] board, int row, int col )
+  {
+    /* YOUR AWESOME CODE HERE */
+    for(int i = row - 1; i <= row + 1; i++){
+        if (i < 0 || i > board.length - 1){
+          continue;
+        }
+      for (int j = col - 1; j <= col + 1; j++){
+        if (j < 0 || j > board[0].length - 1){
+          continue;
+        }
+        else if (i == row && j == col){
+          continue;
+        }
+        else {
+          board[i][j] = 'X';
+        }
+      }
+    }
+  }
+
+
+  
   public static void explodeAllChar(char[][] board, char c)
   {
     /* YOUR AWESOME CODE HERE */
