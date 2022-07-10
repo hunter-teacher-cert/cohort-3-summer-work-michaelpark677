@@ -1,4 +1,5 @@
-import java.util.Random;
+import java.util.*;
+import java.io.*;
 
 public class Array {
 
@@ -16,31 +17,33 @@ public class Array {
 
   public static int histogram(int[] counts) {
 
-    int scores;
+    int [] scores= new int[100];
     
     counts = new int[100];
-    for (int i = 0; i < scores.length; i++) {
-      int index = scores[i];
-      counts[index]++;
+    for //(int i = 0; i < scores.length; i++) {
+      (int score : scores) {
+      counts[score]++;
       
     }
-    return scores;
+   return score;
   }
 
-  public static int[] randomArray(int size) {
+  /*public static int[] randomArray(int size) {
     Random random = new Random();
     int[] a = new int[size];
     for (int i = 0; i < a.length; i++) {
         a[i] = random.nextInt(100);
+       System.out.println(Arrays.toString(a));
     }
     return a;
 }
 
-  
+  */
   public static void main (String[] args) {
 
     double [] a = {1, 2, 3, 4};
 
-    powArray(a, 2);
+    powArray(a, 3);
+  
   }
 }
