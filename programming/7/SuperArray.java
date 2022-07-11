@@ -147,10 +147,13 @@ public class SuperArray
   public void remove(int index)
   {
     // shift items down to remove the item at index
-    /* YOUR SIMPLE+SMART CODE HERE */
-
+        for(int i = index; i < numberElements - 1; i++){
+      data[i] = data[i+1];
+    }
     // subtract fom numElements;
-    /* YOUR SIMPLE+SMART CODE HERE */
+   numberElements --;
+    
+    
   }
 
 
@@ -177,6 +180,7 @@ public class SuperArray
 data[index] = value;
     // increment numElements
     /* YOUR SIMPLE+SMART CODE HERE */
+    numberElements++;
      }
   }
 
