@@ -21,7 +21,22 @@ public class Craps {
     
   }
 
-  public static 
+  public static void round() {
+
+    int rollmax = 12;
+    Random random = new Random();
+    int roll = random.nextInt(rollmax);
+
+    if (roll == 2 || roll == 3 || roll == 12) {
+        System.out.println("You rolled a " + roll + ". That's Craps, you lose.");
+    }
+    if (roll == 7 || roll == 12) {
+        System.out.println("You rolled a " + roll + ". That's a Natural, you win.");
+    }
+
+  }
+
+    
   
   
   public static void main (String[] args) {
@@ -32,6 +47,7 @@ public class Craps {
     int numDice = 2;
     int max = numDice * 6;
     System.out.println(shoot(numDice, max));
-    
+
+    round();
   }
 }
