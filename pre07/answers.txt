@@ -1,0 +1,7 @@
+Exercise 2)
+
+The first method “banana” multiplies each element in the array “a” by “kiwi”, where kiwi starts at 1 and gets multiplied by each element in “a” then kiwi is updated to the new value of kiwi, etc., until the end of the array is reached and the final value of kiwi is returned.
+
+The second method “grapefruit” checks each element in the array “a” to the input value “grape” and returns the index value for the matching element in the array or returns a -1 if there are no matching elements in the array.
+
+The third method “pineapple” checks each element in the array “a” referenced by the index “pine” and increases the counting variable ”pear” by one if the element is equal to “apple”, then returns the final count for pear.
