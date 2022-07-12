@@ -30,15 +30,15 @@ public class Craps {
     if (roll == 2 || roll == 3 || roll == 12) {
         System.out.println("You rolled a " + roll + ". That's Craps, you lose.");
     }
-    if (roll == 7 || roll == 12) {
+    else if (roll == 7 || roll == 12) {
         System.out.println("You rolled a " + roll + ". That's a Natural, you win.");
+    }
+    else if(int point == roll) {
+      if ()
     }
 
   }
 
-    
-  
-  
   public static void main (String[] args) {
 
     int die = 9;
