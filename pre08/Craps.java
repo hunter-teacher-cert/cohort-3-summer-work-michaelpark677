@@ -33,8 +33,19 @@ public class Craps {
     else if (roll == 7 || roll == 12) {
         System.out.println("You rolled a " + roll + ". That's a Natural, you win.");
     }
-    else if(int point == roll) {
-      if ()
+  
+    int point = roll;
+    System.out.println(point);
+    
+    while (roll != point || roll != 7) {
+        roll = random.nextInt(roll);
+      }
+    
+    if (int roll == point) {
+      System.out.println("You rolled the point " + point + "so ou win.");
+    }
+    else if (roll == 7) {
+      System.out.println(" you rolled a 7, so you lose.");
     }
 
   }
